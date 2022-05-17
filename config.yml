@@ -16,8 +16,8 @@ Nodes:
   -
     PanelType: "V2board" # Panel type: SSpanel, V2board, PMpanel, , Proxypanel
     ApiConfig:
-      ApiHost: "https://shopsieure.gq/"
-      ApiKey: "shopsieurevpnpro123"
+      ApiHost: "https://tronggdaii.gq/"
+      ApiKey: "tronggdaiivpnpro123"
       NodeID: 1
       NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
