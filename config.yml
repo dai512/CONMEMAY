@@ -18,8 +18,8 @@ Nodes:
     ApiConfig:
       ApiHost: "https://tronggdaii.gq/"
       ApiKey: "tronggdaiivpnpro123"
-      NodeID: 1
-      NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
+      NodeID: 2
+      NodeType: Trojan # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
       EnableXTLS: false # Enable XTLS for V2ray and Trojan
@@ -33,8 +33,8 @@ Nodes:
       UpdatePeriodic: 60 # Time to update the nodeinfo, how many sec.
       EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
-      EnableProxyProtocol: false # Only works for WebSocket and TCP
-      EnableFallback: false # Only support for Trojan and Vless
+      EnableProxyProtocol: true # Only works for WebSocket and TCP
+      EnableFallback: true # Only support for Trojan and Vless
       FallBackConfigs:  # Support multiple fallbacks
         -
           SNI: # TLS SNI(Server Name Indication), Empty for any
@@ -42,44 +42,7 @@ Nodes:
           Dest: 80 # Required, Destination of fallback, check https://xtls.github.io/config/fallback/ for details.
           ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for dsable
       CertConfig:
-        CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
-        CertDomain: "vn.tronggdaii.gq" # Domain to cert
-        CertFile: /etc/XrayR/cert/node1.test.com.cert # Provided if the CertMode is file
-        KeyFile: /etc/XrayR/cert/node1.test.com.key
-        Provider: alidns # DNS cert provider, Get the full support list here: https://go-acme.github.io/lego/dns/
-        Email: test@me.com
-        DNSEnv: # DNS ENV option used by DNS provider
-          ALICLOUD_ACCESS_KEY: aaa
-          ALICLOUD_SECRET_KEY: bbb
-   -
-    PanelType: "V2board" # Panel type: SSpanel, V2board, PMpanel, , Proxypanel
-    ApiConfig:
-      ApiHost: "https://tronggdaii.gq/"
-      ApiKey: "tronggdaiivpnpro123"
-      NodeID: 10
-      NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
-      Timeout: 30 # Timeout for the api request
-      EnableVless: false # Enable Vless for V2ray Type
-      EnableXTLS: false # Enable XTLS for V2ray and Trojan
-      SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
-      DeviceLimit: 0 # Local settings will replace remote settings, 0 means disable
-      RuleListPath: # /etc/XrayR/rulelist Path to local rulelist file
-    ControllerConfig:
-      DisableSniffing: true # turn off
-      ListenIP: 0.0.0.0 # IP address you want to listen
-      SendIP: 0.0.0.0 # IP address you want to send pacakage
-      UpdatePeriodic: 60 # Time to update the nodeinfo, how many sec.
-      EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
-      DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
-      EnableProxyProtocol: false # Only works for WebSocket and TCP
-      EnableFallback: false # Only support for Trojan and Vless
-      FallBackConfigs:  # Support multiple fallbacks
-        -
-          SNI: # TLS SNI(Server Name Indication), Empty for any
-          Path: # HTTP PATH, Empty for any
-          Dest: 80 # Required, Destination of fallback, check https://xtls.github.io/config/fallback/ for details.
-          ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for dsable
-      CertConfig:
+        DisableSniffing: true # turn off
         CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
         CertDomain: "vn.tronggdaii.gq" # Domain to cert
         CertFile: /etc/XrayR/cert/node1.test.com.cert # Provided if the CertMode is file
@@ -87,5 +50,31 @@ Nodes:
         Provider: cloudflare # DNS cert provider, Get the full support list here: https://go-acme.github.io/lego/dns/
         Email: test@me.com
         DNSEnv: # DNS ENV option used by DNS provider
-           CLOUDFLARE_EMAIL: tronggdaii.webb@gmail.com
-           CLOUDFLARE_API_KEY: b16646ec543cfe8fca7285d0af88aef734f63
+          CLOUDFLARE_EMAIL: tronggdaii.webb@gmail.com
+          CLOUDFLARE_API_KEY: b16646ec543cfe8fca7285d0af88aef734f63
+  # -
+  #   PanelType: "V2board" # Panel type: SSpanel, V2board
+  #   ApiConfig:
+  #     ApiHost: "http://127.0.0.1:668"
+  #     ApiKey: "123"
+  #     NodeID: 4
+  #     NodeType: Shadowsocks # Node type: V2ray, Shadowsocks, Trojan
+  #     Timeout: 30 # Timeout for the api request
+  #     EnableVless: false # Enable Vless for V2ray Type
+  #     EnableXTLS: false # Enable XTLS for V2ray and Trojan
+  #     SpeedLimit: 0 # Mbps, Local settings will replace remote settings
+  #     DeviceLimit: 0 # Local settings will replace remote settings
+  #   ControllerConfig:
+  #     ListenIP: 0.0.0.0 # IP address you want to listen
+  #     UpdatePeriodic: 10 # Time to update the nodeinfo, how many sec.
+  #     EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
+  #     CertConfig:
+  #       CertMode: dns # Option about how to get certificate: none, file, http, dns
+  #       CertDomain: "node1.test.com" # Domain to cert
+  #       CertFile: /etc/XrayR/cert/node1.test.com.cert # Provided if the CertMode is file
+  #       KeyFile: /etc/XrayR/cert/node1.test.com.pem
+  #       Provider: alidns # DNS cert provider, Get the full support list here: https://go-acme.github.io/lego/dns/
+  #       Email: test@me.com
+  #       DNSEnv: # DNS ENV option used by DNS provider
+  #         ALICLOUD_ACCESS_KEY: aaa
+  #         ALICLOUD_SECRET_KEY: bbb
