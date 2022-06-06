@@ -1,4 +1,7 @@
 {
-"versionCode": "1.1.4",
-"url": "https://www.mediafire.com/file/yoqz4hiz8qls47m/Kjay_VPN_v1.1.4%2528Android_11_-_Beta%2529.apk/file",
-"Message": "What's new?\nThank You!💚" }
+"SendMessage":35,
+"Url":
+"https://www.mediafire.com/download/t63dxkjb5rfyuev",
+"MyMessage":
+"============================ \n HÃY DONATE CHO AD 1 LY CÀ PHÊ🤣 \n \n TÊN : NGUYEN TRONG DAI \n *MB BANK : 5551226789* \n *MOMO : 0342889013* \n ============================"
+}
