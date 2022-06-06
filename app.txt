@@ -1,7 +1,4 @@
-{
-"SendMessage":35,
-"Url":
-"https://www.mediafire.com/download/t63dxkjb5rfyuev",
+"SendMessage":5,
 "MyMessage":
-"============================ \n HÃY DONATE CHO AD 1 LY CÀ PHÊ🤣 \n \n TÊN : NGUYEN TRONG DAI \n *MB BANK : 5551226789* \n *MOMO : 0342889013* \n ============================"
+"Buổi Tối Vui Vẻ💟\n \n Hãy Vào Zalo Tương Tác Nào🇻🇳 \n \n ⚡ɴɢᴜʏᴇ̂̃ɴ ᴛʀᴏ̣ɴɢ ᴆᴀ̣ɪ 🔥"
 }
