@@ -1,0 +1,4 @@
+{
+"versionCode": "1.1.4",
+"url": "https://www.mediafire.com/file/yoqz4hiz8qls47m/Kjay_VPN_v1.1.4%2528Android_11_-_Beta%2529.apk/file",
+"Message": "What's new?\nThank You!💚" }
